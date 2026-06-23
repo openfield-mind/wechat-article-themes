@@ -1,0 +1,255 @@
+/**
+ * Paper Museum theme
+ * Curated print notes, paper texture, red seal accents, and calm reading rhythm.
+ */
+
+:root {
+  --paper-museum-ink: #2a221c;
+  --paper-museum-paper: #fbf6ea;
+  --paper-museum-line: rgba(42, 34, 28, 0.22);
+  --paper-museum-red: #b94032;
+  --paper-museum-gold: #d8b46a;
+}
+
+h1 {
+  display: block;
+  position: relative;
+  padding: 1.35em 0.85em 1em;
+  border: 1px solid var(--paper-museum-line);
+  margin: 2.1em 8px 1.45em;
+  color: var(--paper-museum-ink);
+  background:
+    linear-gradient(180deg, rgba(216, 180, 106, 0.16), transparent 70%),
+    var(--paper-museum-paper);
+  font-family: var(--md-font-family);
+  font-size: calc(var(--md-font-size) * 1.52);
+  font-weight: 780;
+  line-height: 1.24;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+h1::before {
+  content: "策展手记";
+  display: inline-block;
+  padding: 0.18em 0.7em;
+  margin-bottom: 0.9em;
+  color: #fffaf0;
+  background: var(--paper-museum-red);
+  font-size: calc(var(--md-font-size) * 0.72);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  right: 0.9em;
+  bottom: 0.8em;
+  width: 2.45em;
+  height: 2.45em;
+  border: 2px solid rgba(185, 64, 50, 0.32);
+  border-radius: 50%;
+  opacity: 0.75;
+}
+
+h2 {
+  display: block;
+  padding: 0.65em 0.25em 0.55em;
+  border-top: 1px solid var(--paper-museum-line);
+  border-bottom: 1px solid var(--paper-museum-line);
+  margin: 3em 8px 1.2em;
+  color: var(--paper-museum-ink);
+  background: linear-gradient(90deg, rgba(185, 64, 50, 0.08), transparent);
+  font-size: calc(var(--md-font-size) * 1.26);
+  font-weight: 760;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+h2::before {
+  content: "§";
+  margin-right: 0.55em;
+  color: var(--paper-museum-red);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1em;
+}
+
+h3 {
+  display: block;
+  padding-left: 0.75em;
+  border-left: 3px double var(--paper-museum-red);
+  margin: 2.15em 8px 0.85em;
+  color: var(--paper-museum-ink);
+  font-size: calc(var(--md-font-size) * 1.1);
+  font-weight: 740;
+  line-height: 1.42;
+  letter-spacing: 0.02em;
+}
+
+h4,
+h5,
+h6 {
+  margin: 1.7em 8px 0.65em;
+  color: var(--paper-museum-red);
+  font-size: var(--md-font-size);
+  font-weight: 720;
+  letter-spacing: 0.02em;
+}
+
+p {
+  margin: 1.22em 8px;
+  color: var(--paper-museum-ink);
+  font-size: var(--md-font-size);
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+
+strong {
+  color: var(--paper-museum-red);
+  font-weight: 820;
+}
+
+em {
+  color: var(--paper-museum-ink);
+  font-style: normal;
+  background: linear-gradient(transparent 68%, rgba(216, 180, 106, 0.42) 68%);
+}
+
+a {
+  color: var(--paper-museum-red);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--paper-museum-red);
+}
+
+blockquote {
+  position: relative;
+  padding: 1.05em 1.1em 1.05em 1.25em;
+  border: 1px solid var(--paper-museum-line);
+  border-left: 4px solid var(--paper-museum-red);
+  border-radius: 0;
+  margin: 1.55em 8px;
+  color: var(--paper-museum-ink);
+  background: var(--paper-museum-paper);
+  font-style: normal;
+}
+
+blockquote::before {
+  content: "旁注";
+  display: inline-block;
+  margin-bottom: 0.62em;
+  color: var(--paper-museum-red);
+  font-size: calc(var(--md-font-size) * 0.78);
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+blockquote > p {
+  margin: 0;
+  color: var(--paper-museum-ink);
+  line-height: 1.92;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 1.12em 8px;
+  color: var(--paper-museum-ink);
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+li {
+  margin: 0.62em 0;
+  color: var(--paper-museum-ink);
+  line-height: 1.82;
+  letter-spacing: 0.02em;
+}
+
+ul > li::before {
+  content: "◇";
+  margin-right: 0.52em;
+  color: var(--paper-museum-red);
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  margin: 2.4em 8px;
+  background: linear-gradient(90deg, transparent, var(--paper-museum-red), var(--paper-museum-gold), transparent);
+}
+
+.codespan {
+  padding: 0.1em 0.32em;
+  border: 1px solid rgba(42, 34, 28, 0.18);
+  color: var(--paper-museum-red);
+  background: rgba(216, 180, 106, 0.13);
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+pre.code__pre,
+.hljs.code__pre {
+  border: 1px solid var(--paper-museum-line);
+  border-radius: 0;
+  margin: 1.45em 8px;
+  color: var(--paper-museum-ink);
+  background: #f5ead7;
+}
+
+pre.code__pre > code,
+.hljs.code__pre > code {
+  color: var(--paper-museum-ink);
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: calc(var(--md-font-size) * 0.88);
+  line-height: 1.75;
+}
+
+table {
+  width: calc(100% - 16px);
+  border-collapse: collapse;
+  margin: 1.55em 8px;
+  color: var(--paper-museum-ink);
+  background: #fffaf0;
+}
+
+th {
+  border: 1px solid var(--paper-museum-line);
+  color: #fffaf0;
+  background: var(--paper-museum-red);
+  font-weight: 800;
+}
+
+td {
+  border: 1px solid var(--paper-museum-line);
+  padding: 0.65em 0.72em;
+}
+
+img {
+  padding: 0.35em;
+  border: 1px solid var(--paper-museum-line);
+  border-radius: 0;
+  background: #fffaf0;
+}
+
+figcaption,
+.md-figcaption {
+  color: rgba(42, 34, 28, 0.58);
+  font-size: 0.8em;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+.markdown-alert {
+  border: 1px solid var(--paper-museum-line);
+  border-left: 4px solid var(--paper-museum-red);
+  border-radius: 0;
+  background: var(--paper-museum-paper);
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeChat Article Themes Demo</title>
+  <style>
+    :root {
+      --md-primary-color: #0F4C81;
+      --md-font-family: -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
+      --md-font-size: 16px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #eef2f1;
+      color: #111;
+      font-family: var(--md-font-family);
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    button {
+      border: 1px solid #111;
+      background: #fff;
+      padding: 8px 12px;
+      cursor: pointer;
+      font: inherit;
+    }
+    button.active {
+      background: #111;
+      color: #fff;
+    }
+    .phone {
+      width: min(420px, 100%);
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: 18px 22px 42px;
+      background: #fff;
+      overflow: hidden;
+    }
+    #output section {
+      width: 100%;
+      overflow: hidden;
+    }
+  </style>
+  <link id="theme-link" rel="stylesheet" href="../themes/edge-note.css">
+</head>
+<body>
+  <nav>
+    <button class="active" data-theme="../themes/edge-note.css">锐稿</button>
+    <button data-theme="../themes/signal-lab.css">信标</button>
+    <button data-theme="../themes/paper-museum.css">纸馆</button>
+  </nav>
+  <main class="phone">
+    <article id="output">
+      <section>
+        <h1>在信息噪音里，给自己留一把锋利的尺</h1>
+        <p>我们每天都在接收大量信息。它们像潮水一样涌来：热点、观点、教程、争论、截图、转发。真正的问题不是信息不够，而是我们太容易被信息推着走。</p>
+        <p>这篇文章想讨论一个很小但很有用的方法：<strong>给自己的判断系统建立一把尺</strong>。</p>
+        <h2>一、先别急着表达，先判断信息的形状</h2>
+        <p>很多人看到一个观点，第一反应是赞同或反对。但更有效的第一反应应该是：这条信息属于哪一种？</p>
+        <ul>
+          <li>它是事实，还是解释？</li>
+          <li>它是经验，还是证据？</li>
+          <li>它是结论，还是情绪？</li>
+        </ul>
+        <blockquote><p>好的判断不是更快地给答案，而是更快地看清问题属于哪一类。</p></blockquote>
+        <h2>二、把「我觉得」换成「我依据什么」</h2>
+        <p>一个观点如果只能停留在「我觉得」，它就很难被打磨。不是说直觉没有价值，而是直觉需要被追问。</p>
+        <ol>
+          <li>我看到的证据是什么？</li>
+          <li>有没有反例？</li>
+          <li>如果我错了，最可能错在哪里？</li>
+        </ol>
+        <h3>一个小例子</h3>
+        <p>比如你看到一句话：<code class="codespan">所有人都应该学习 AI</code>。</p>
+        <table>
+          <thead><tr><th>选择</th><th>体现</th></tr></thead>
+          <tbody>
+            <tr><td>保留什么</td><td>价值判断</td></tr>
+            <tr><td>删掉什么</td><td>审美边界</td></tr>
+          </tbody>
+        </table>
+        <pre class="hljs code__pre"><code>输入：一个混乱的问题
+处理：拆分、排序、验证
+输出：一个更清楚的行动</code></pre>
+      </section>
+    </article>
+  </main>
+  <script>
+    const link = document.querySelector('#theme-link')
+    const buttons = [...document.querySelectorAll('button[data-theme]')]
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        link.href = button.dataset.theme
+        buttons.forEach(item => item.classList.toggle('active', item === button))
+      })
+    })
+  </script>
+</body>
+</html>
