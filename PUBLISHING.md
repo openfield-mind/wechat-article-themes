@@ -13,7 +13,7 @@ The local repository is ready. GitHub CLI is not installed on this machine, and 
 
 ```sh
 cd /Users/Admin/code/github/wechat-article-themes
-git remote add origin git@github.com:1006929424/wechat-article-themes.git
+git remote add origin git@github.com:openfield-mind/wechat-article-themes.git
 git push -u origin main
 ```
 

@@ -1,0 +1,323 @@
+/**
+ * Paper Whisper theme
+ * A softer Paper Museum sibling: warm manuscript paper, gentle rounded notes,
+ * brush-like heading rhythm, and quiet serif/kai typography.
+ */
+
+:root {
+  --paper-whisper-ink: #2b2621;
+  --paper-whisper-muted: rgba(43, 38, 33, 0.62);
+  --paper-whisper-paper: #fff9ed;
+  --paper-whisper-wash: #f7eddd;
+  --paper-whisper-line: rgba(97, 77, 52, 0.14);
+  --paper-whisper-rose: #b86656;
+  --paper-whisper-plum: #8b5f68;
+  --paper-whisper-moss: #74846b;
+  --paper-whisper-gold: #d8bd83;
+  --paper-whisper-serif: "LXGW WenKai Screen", "Kaiti SC", "STKaiti", "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", Georgia, serif;
+}
+
+h1 {
+  display: block;
+  position: relative;
+  padding: 1.45em 1.18em 1.28em;
+  border: 1px solid var(--paper-whisper-line);
+  border-radius: 28px 22px 30px 20px;
+  margin: 2.05em 8px 1.48em;
+  color: var(--paper-whisper-ink);
+  background:
+    radial-gradient(circle at 88% 18%, rgba(184, 102, 86, 0.12), transparent 25%),
+    radial-gradient(circle at 6% 92%, rgba(116, 132, 107, 0.11), transparent 24%),
+    linear-gradient(180deg, rgba(216, 189, 131, 0.18), rgba(255, 249, 237, 0.9) 68%),
+    var(--paper-whisper-paper);
+  box-shadow:
+    0 16px 38px rgba(97, 77, 52, 0.09),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.48);
+  font-family: var(--paper-whisper-serif);
+  font-size: calc(var(--md-font-size) * 1.48);
+  font-weight: 650;
+  line-height: 1.34;
+  letter-spacing: 0.015em;
+  text-align: left;
+}
+
+h1::before {
+  content: "纸语手札";
+  display: inline-block;
+  padding: 0.23em 0.78em 0.2em;
+  border: 1px solid rgba(184, 102, 86, 0.18);
+  border-radius: 999px;
+  margin-bottom: 1em;
+  color: var(--paper-whisper-rose);
+  background: rgba(255, 249, 237, 0.72);
+  font-family: var(--md-font-family);
+  font-size: calc(var(--md-font-size) * 0.72);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  right: 1em;
+  bottom: 0.95em;
+  width: 2.45em;
+  height: 2.45em;
+  border: 1.5px solid rgba(184, 102, 86, 0.22);
+  border-radius: 48% 52% 43% 57%;
+  background: radial-gradient(circle, rgba(184, 102, 86, 0.08), transparent 62%);
+}
+
+h2 {
+  display: block;
+  position: relative;
+  padding: 0.28em 0.1em 0.72em 0.85em;
+  margin: 2.9em 8px 1.12em;
+  color: var(--paper-whisper-ink);
+  background: linear-gradient(90deg, rgba(184, 102, 86, 0.09), transparent 74%);
+  border-radius: 18px;
+  font-family: var(--paper-whisper-serif);
+  font-size: calc(var(--md-font-size) * 1.22);
+  font-weight: 650;
+  line-height: 1.48;
+  letter-spacing: 0.015em;
+  text-align: left;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0.1em;
+  top: 0.45em;
+  width: 0.36em;
+  height: 1.45em;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--paper-whisper-rose), rgba(216, 189, 131, 0.55));
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0.85em;
+  right: 0.7em;
+  bottom: 0.32em;
+  height: 0.48em;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(216, 189, 131, 0.34), rgba(216, 189, 131, 0));
+}
+
+h3 {
+  display: block;
+  position: relative;
+  padding: 0.16em 0 0.18em 0.95em;
+  margin: 2.05em 8px 0.78em;
+  color: var(--paper-whisper-plum);
+  font-family: var(--paper-whisper-serif);
+  font-size: calc(var(--md-font-size) * 1.08);
+  font-weight: 650;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+}
+
+h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.56em;
+  width: 0.48em;
+  height: 0.48em;
+  border-radius: 46% 54% 55% 45%;
+  background: var(--paper-whisper-moss);
+  box-shadow: 0 0 0 5px rgba(116, 132, 107, 0.1);
+}
+
+h4,
+h5,
+h6 {
+  margin: 1.65em 8px 0.62em;
+  color: var(--paper-whisper-moss);
+  font-family: var(--paper-whisper-serif);
+  font-size: var(--md-font-size);
+  font-weight: 650;
+  letter-spacing: 0.015em;
+}
+
+p {
+  margin: 1.2em 8px;
+  color: var(--paper-whisper-ink);
+  font-family: var(--paper-whisper-serif);
+  font-size: var(--md-font-size);
+  line-height: 2.08;
+  letter-spacing: 0.012em;
+}
+
+strong {
+  color: var(--paper-whisper-rose);
+  font-weight: 760;
+}
+
+em {
+  color: var(--paper-whisper-ink);
+  font-style: normal;
+  background: linear-gradient(transparent 69%, rgba(216, 189, 131, 0.32) 69%);
+}
+
+a {
+  color: var(--paper-whisper-plum);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(139, 95, 104, 0.36);
+}
+
+blockquote {
+  position: relative;
+  padding: 1.08em 1.12em 1.08em 1.18em;
+  border: 1px solid var(--paper-whisper-line);
+  border-radius: 22px 18px 24px 18px;
+  margin: 1.55em 8px;
+  color: var(--paper-whisper-ink);
+  background:
+    linear-gradient(180deg, rgba(255, 249, 237, 0.95), rgba(247, 237, 221, 0.72)),
+    var(--paper-whisper-paper);
+  box-shadow:
+    0 10px 24px rgba(97, 77, 52, 0.07),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.42);
+  font-style: normal;
+}
+
+blockquote::before {
+  content: "轻声";
+  display: inline-block;
+  padding: 0.13em 0.58em;
+  border-radius: 999px;
+  margin-bottom: 0.72em;
+  color: var(--paper-whisper-plum);
+  background: rgba(139, 95, 104, 0.09);
+  font-family: var(--md-font-family);
+  font-size: calc(var(--md-font-size) * 0.74);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+blockquote > p {
+  margin: 0;
+  color: var(--paper-whisper-ink);
+  line-height: 2;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 1.12em 8px;
+  color: var(--paper-whisper-ink);
+  font-family: var(--paper-whisper-serif);
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+li {
+  margin: 0.64em 0;
+  color: var(--paper-whisper-ink);
+  line-height: 1.9;
+  letter-spacing: 0.012em;
+}
+
+ul > li::before {
+  content: "";
+  display: inline-block;
+  width: 0.44em;
+  height: 0.44em;
+  border-radius: 52% 48% 58% 42%;
+  margin-right: 0.64em;
+  background: rgba(184, 102, 86, 0.82);
+  box-shadow: 0 0 0 4px rgba(184, 102, 86, 0.1);
+  vertical-align: 0.08em;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  margin: 2.4em 8px;
+  background: linear-gradient(90deg, transparent, rgba(184, 102, 86, 0.32), rgba(216, 189, 131, 0.48), transparent);
+}
+
+.codespan {
+  padding: 0.11em 0.36em;
+  border: 1px solid rgba(139, 95, 104, 0.16);
+  border-radius: 9px;
+  color: var(--paper-whisper-plum);
+  background: rgba(139, 95, 104, 0.07);
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+pre.code__pre,
+.hljs.code__pre {
+  border: 1px solid var(--paper-whisper-line);
+  border-radius: 20px;
+  margin: 1.45em 8px;
+  color: var(--paper-whisper-ink);
+  background: #f7ecdc;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.38);
+}
+
+pre.code__pre > code,
+.hljs.code__pre > code {
+  color: var(--paper-whisper-ink);
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: calc(var(--md-font-size) * 0.88);
+  line-height: 1.78;
+}
+
+table {
+  width: calc(100% - 16px);
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--paper-whisper-line);
+  border-radius: 20px;
+  margin: 1.55em 8px;
+  color: var(--paper-whisper-ink);
+  background: rgba(255, 249, 237, 0.94);
+  overflow: hidden;
+}
+
+th {
+  border-bottom: 1px solid var(--paper-whisper-line);
+  color: var(--paper-whisper-ink);
+  background: rgba(216, 189, 131, 0.2);
+  font-family: var(--paper-whisper-serif);
+  font-weight: 700;
+}
+
+td {
+  border-top: 1px solid rgba(97, 77, 52, 0.08);
+  padding: 0.68em 0.75em;
+}
+
+img {
+  padding: 0.44em;
+  border: 1px solid var(--paper-whisper-line);
+  border-radius: 24px 18px 26px 18px;
+  background: #fff9ed;
+  box-shadow: 0 12px 28px rgba(97, 77, 52, 0.08);
+}
+
+figcaption,
+.md-figcaption {
+  color: var(--paper-whisper-muted);
+  font-family: var(--paper-whisper-serif);
+  font-size: 0.8em;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.markdown-alert {
+  border: 1px solid var(--paper-whisper-line);
+  border-radius: 22px;
+  background: var(--paper-whisper-paper);
+}

@@ -60,6 +60,7 @@
     <button data-theme="../themes/signal-lab.css">信标</button>
     <button data-theme="../themes/paper-museum.css">纸馆</button>
     <button data-theme="../themes/paper-garden.css">纸庭</button>
+    <button data-theme="../themes/paper-whisper.css">纸语</button>
   </nav>
   <main class="phone">
     <article id="output">
@@ -100,10 +101,23 @@
   <script>
     const link = document.querySelector('#theme-link')
     const buttons = [...document.querySelectorAll('button[data-theme]')]
+    const queryTheme = new URLSearchParams(window.location.search).get('theme')
+    const initialButton = queryTheme
+      ? buttons.find(button => button.dataset.theme.includes(`${queryTheme}.css`))
+      : null
+
+    function setTheme(button) {
+      link.href = button.dataset.theme
+      buttons.forEach(item => item.classList.toggle('active', item === button))
+    }
+
+    if (initialButton) {
+      setTheme(initialButton)
+    }
+
     buttons.forEach((button) => {
       button.addEventListener('click', () => {
-        link.href = button.dataset.theme
-        buttons.forEach(item => item.classList.toggle('active', item === button))
+        setTheme(button)
       })
     })
   </script>
