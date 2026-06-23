@@ -164,6 +164,7 @@ START_HERE.md           第一次使用只看这一页
 AGENTS.md               给 Codex/Claude/Cursor 等 agent 的安装说明
 QUICKSTART.md           更详细的新手教程
 prompts/                可以复制给 agent 的提示词
+scripts/                重新生成主题预览图的脚本
 install.sh              本机安装脚本
 ```
 

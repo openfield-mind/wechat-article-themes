@@ -28,6 +28,12 @@
       background: rgba(255, 255, 255, 0.92);
       border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     }
+    body.preview-mode nav {
+      display: none;
+    }
+    body.preview-mode .phone {
+      min-height: 0;
+    }
     button {
       border: 1px solid #111;
       background: #fff;
@@ -101,7 +107,11 @@
   <script>
     const link = document.querySelector('#theme-link')
     const buttons = [...document.querySelectorAll('button[data-theme]')]
-    const queryTheme = new URLSearchParams(window.location.search).get('theme')
+    const params = new URLSearchParams(window.location.search)
+    const queryTheme = params.get('theme')
+    if (params.get('preview') === '1') {
+      document.body.classList.add('preview-mode')
+    }
     const initialButton = queryTheme
       ? buttons.find(button => button.dataset.theme.includes(`${queryTheme}.css`))
       : null

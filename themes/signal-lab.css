@@ -88,8 +88,8 @@ h3 {
   padding: 0.55em 0.75em;
   border-bottom: 1px solid rgba(73, 255, 184, 0.55);
   margin: 2.2em 8px 0.85em;
-  color: var(--signal-lab-ink);
-  background: linear-gradient(90deg, rgba(73, 255, 184, 0.13), transparent);
+  color: #172325;
+  background: linear-gradient(90deg, rgba(73, 255, 184, 0.18), rgba(73, 255, 184, 0.04));
   font-size: calc(var(--md-font-size) * 1.1);
   font-weight: 780;
   line-height: 1.34;
