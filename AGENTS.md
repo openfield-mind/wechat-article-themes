@@ -2,7 +2,9 @@
 
 This repository contains CSS themes for WeChat Official Account Markdown articles.
 
-If a user asks an agent to "install this repository", "use these themes", or "connect this to my editor", follow this file.
+If a user asks an agent to "install this repository", "use these themes", "connect this to my editor", or says in Chinese "帮我安装这个仓库里的东西", follow this file.
+
+Use beginner-friendly Chinese when the user writes in Chinese.
 
 ## Goal
 
@@ -21,7 +23,9 @@ themes/                 CSS files to install or copy
 previews/               screenshots for choosing a theme
 examples/sample.md      sample article
 demo/index.html         static local demo
+START_HERE.md           beginner-first guide
 QUICKSTART.md           beginner instructions
+prompts/agent-install.txt copyable prompt for agents
 ```
 
 ## Theme Choices
@@ -37,6 +41,13 @@ QUICKSTART.md           beginner instructions
 First inspect the user's current project.
 
 Then choose the matching path:
+
+### If there is no existing project context
+
+1. Clone or copy this repository to a clear local path.
+2. Run `./install.sh` if shell access is available.
+3. Tell the user the installed path and the recommended CSS file.
+4. Explain that they can paste the CSS into doocs/md, mdnice, or another Markdown-to-WeChat editor.
 
 ### If the project is doocs/md
 
@@ -78,6 +89,20 @@ Run:
 ```
 
 or manually copy `themes/` to a location the user can find.
+
+## Default Beginner Recommendation
+
+If the user is unsure, recommend:
+
+```text
+themes/paper-garden.css
+```
+
+If the user says they like Paper Museum but wants softer rounded typography, recommend:
+
+```text
+themes/paper-whisper.css
+```
 
 ## Agent Response Template
 

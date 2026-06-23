@@ -2,6 +2,12 @@
 
 这份教程给完全不懂 CSS 的用户。
 
+如果你第一次打开这个仓库，建议先看：
+
+```text
+START_HERE.md
+```
+
 ## 你需要准备什么？
 
 你需要一个支持 Markdown 和自定义 CSS 的公众号编辑器。
@@ -24,7 +30,9 @@
 
 ## 方式二：让 Agent 帮你
 
-把这句话发给 Codex、Claude、Cursor 或其他编程 agent：
+最省心的方式：复制 `prompts/agent-install.txt` 里的内容，发给 Codex、Claude、Cursor 或其他编程 agent。
+
+你也可以直接复制这段：
 
 ```text
 请帮我安装这个仓库里的微信公众号排版主题：
@@ -55,6 +63,13 @@ cd wechat-article-themes
 
 ```text
 ~/wechat-article-themes/themes/
+```
+
+安装后还会复制：
+
+```text
+~/wechat-article-themes/START_HERE.md
+~/wechat-article-themes/prompts/agent-install.txt
 ```
 
 ## 推荐选择

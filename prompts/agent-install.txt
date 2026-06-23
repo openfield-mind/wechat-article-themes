@@ -1,0 +1,14 @@
+请帮我安装并使用这个微信公众号排版主题仓库：
+https://github.com/openfield-mind/wechat-article-themes
+
+请先阅读仓库里的 AGENTS.md。
+如果我没有指定主题，请默认使用 themes/paper-garden.css。
+
+请完成：
+1. 克隆或读取这个仓库
+2. 找到 themes 里的 CSS 主题
+3. 把合适的主题安装到我当前项目或公众号 Markdown 编辑器里
+4. 告诉我接下来怎么选择主题、怎么写文章、怎么复制到微信公众号后台
+5. 用小白能听懂的话说明，不要只说技术步骤
+
+如果当前项目不是公众号 Markdown 编辑器，请只把主题文件复制到一个容易找到的位置，并告诉我如何手动粘贴 CSS。

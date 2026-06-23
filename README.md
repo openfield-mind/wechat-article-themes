@@ -4,6 +4,28 @@
 
 如果你不知道 CSS，也没关系。这个仓库就是给你准备的：选一个喜欢的主题，复制到支持“自定义 CSS”的公众号 Markdown 编辑器里，就能直接用。
 
+## 第一次来？先看这里
+
+你只需要记住一句话：
+
+> 这个仓库提供公众号 Markdown 排版 CSS。复制 `themes/` 里的一个 CSS 文件，粘贴到公众号 Markdown 编辑器的自定义 CSS 区域。
+
+最快入口：
+
+| 你是谁 | 直接做什么 |
+| --- | --- |
+| 完全不懂代码 | 打开 [START_HERE.md](./START_HERE.md)，照着 3 分钟教程做 |
+| 想让 Codex / Claude / Cursor 帮你 | 复制 [prompts/agent-install.txt](./prompts/agent-install.txt) 里的话发给 agent |
+| 会运行命令 | `git clone` 后执行 `./install.sh` |
+
+最推荐新手先用：
+
+[themes/paper-garden.css](./themes/paper-garden.css)
+
+想要更温润、更有纸本手札气质，可以用：
+
+[themes/paper-whisper.css](./themes/paper-whisper.css)
+
 ## 这个仓库是干什么的？
 
 这是一个 **微信公众号文章排版 CSS 主题包**。
@@ -33,17 +55,13 @@
 
 不知道选哪个？先用：
 
-```text
-themes/paper-garden.css
-```
+[themes/paper-garden.css](./themes/paper-garden.css)
 
 它是最柔和、最适合普通文章阅读的一套。
 
 如果你喜欢 `Paper Museum / 纸馆` 的纸本和红章气质，但希望它更温润、更少硬边框，可以试试：
 
-```text
-themes/paper-whisper.css
-```
+[themes/paper-whisper.css](./themes/paper-whisper.css)
 
 ## 让 Agent 帮你安装
 
@@ -58,6 +76,12 @@ https://github.com/openfield-mind/wechat-article-themes
 2. 阅读 AGENTS.md
 3. 把 themes 里的 CSS 安装到我当前项目合适的位置
 4. 告诉我如何在编辑器里使用
+```
+
+更完整的可复制版本在：
+
+```text
+prompts/agent-install.txt
 ```
 
 如果你已经在本地，可以说：
@@ -136,8 +160,10 @@ themes/                 主题 CSS，真正要复制/安装的是这里
 previews/               每套主题的效果图
 examples/sample.md      示例 Markdown 文章
 demo/index.html         本地预览页面，双击即可打开
+START_HERE.md           第一次使用只看这一页
 AGENTS.md               给 Codex/Claude/Cursor 等 agent 的安装说明
 QUICKSTART.md           更详细的新手教程
+prompts/                可以复制给 agent 的提示词
 install.sh              本机安装脚本
 ```
 
