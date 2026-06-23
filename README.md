@@ -26,6 +26,12 @@ A curated paper system: warm paper background, red seal marks, calm spacing, mus
 
 ![Paper Museum preview](./previews/paper-museum.png)
 
+### Paper Garden / 纸庭
+
+A softer paper system: rounded note blocks, serif-first Chinese typography, muted garden green, and gentle cinnabar marks.
+
+![Paper Garden preview](./previews/paper-garden.png)
+
 ## Files
 
 ```text
@@ -33,12 +39,14 @@ themes/
   edge-note.css
   signal-lab.css
   paper-museum.css
+  paper-garden.css
 examples/
   sample.md
 previews/
   edge-note.png
   signal-lab.png
   paper-museum.png
+  paper-garden.png
 demo/
   index.html
 ```

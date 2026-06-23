@@ -1,0 +1,294 @@
+/**
+ * Paper Garden theme
+ * A softer sibling of Paper Museum: rounded paper notes, serif rhythm, garden-green ink, and warm cinnabar marks.
+ */
+
+:root {
+  --paper-garden-ink: #2d2720;
+  --paper-garden-muted: rgba(45, 39, 32, 0.66);
+  --paper-garden-paper: #fffaf1;
+  --paper-garden-wash: #f7eddd;
+  --paper-garden-line: rgba(88, 70, 48, 0.16);
+  --paper-garden-green: #6f8f73;
+  --paper-garden-red: #b75b4a;
+  --paper-garden-gold: #d9bd7d;
+  --paper-garden-serif: "Iowan Old Style", "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", Georgia, serif;
+}
+
+h1 {
+  display: block;
+  position: relative;
+  padding: 1.35em 1.08em 1.2em;
+  border: 1px solid var(--paper-garden-line);
+  border-radius: 22px;
+  margin: 2.1em 8px 1.5em;
+  color: var(--paper-garden-ink);
+  background:
+    radial-gradient(circle at 88% 24%, rgba(183, 91, 74, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(217, 189, 125, 0.18), transparent 72%),
+    var(--paper-garden-paper);
+  box-shadow: 0 10px 28px rgba(88, 70, 48, 0.08);
+  font-family: var(--paper-garden-serif);
+  font-size: calc(var(--md-font-size) * 1.48);
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+h1::before {
+  content: "纸庭札记";
+  display: inline-block;
+  padding: 0.25em 0.78em;
+  border-radius: 999px;
+  margin-bottom: 0.95em;
+  color: #fffaf1;
+  background: var(--paper-garden-green);
+  font-family: var(--md-font-family);
+  font-size: calc(var(--md-font-size) * 0.72);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  right: 1.05em;
+  bottom: 1em;
+  width: 2.35em;
+  height: 2.35em;
+  border: 1.5px solid rgba(183, 91, 74, 0.24);
+  border-radius: 42% 58% 48% 52%;
+}
+
+h2 {
+  display: block;
+  position: relative;
+  padding: 0.75em 0.95em 0.75em 1.05em;
+  border: 1px solid var(--paper-garden-line);
+  border-radius: 16px;
+  margin: 2.8em 8px 1.15em;
+  color: var(--paper-garden-ink);
+  background:
+    linear-gradient(90deg, rgba(111, 143, 115, 0.12), rgba(217, 189, 125, 0.1), transparent),
+    rgba(255, 250, 241, 0.88);
+  font-family: var(--paper-garden-serif);
+  font-size: calc(var(--md-font-size) * 1.2);
+  font-weight: 700;
+  line-height: 1.42;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 0.78em;
+  height: 0.78em;
+  border-radius: 50%;
+  margin-right: 0.55em;
+  background: var(--paper-garden-red);
+  box-shadow: 0 0 0 5px rgba(183, 91, 74, 0.11);
+  vertical-align: 0.02em;
+}
+
+h3 {
+  display: block;
+  padding: 0.12em 0 0.12em 0.78em;
+  border-left: 4px solid rgba(111, 143, 115, 0.52);
+  border-radius: 4px;
+  margin: 2.05em 8px 0.78em;
+  color: var(--paper-garden-ink);
+  font-family: var(--paper-garden-serif);
+  font-size: calc(var(--md-font-size) * 1.08);
+  font-weight: 700;
+  line-height: 1.48;
+  letter-spacing: 0.02em;
+}
+
+h4,
+h5,
+h6 {
+  margin: 1.65em 8px 0.62em;
+  color: var(--paper-garden-green);
+  font-family: var(--paper-garden-serif);
+  font-size: var(--md-font-size);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+p {
+  margin: 1.2em 8px;
+  color: var(--paper-garden-ink);
+  font-family: var(--paper-garden-serif);
+  font-size: var(--md-font-size);
+  line-height: 2.05;
+  letter-spacing: 0.015em;
+}
+
+strong {
+  color: var(--paper-garden-red);
+  font-weight: 760;
+}
+
+em {
+  color: var(--paper-garden-ink);
+  font-style: normal;
+  background: linear-gradient(transparent 70%, rgba(217, 189, 125, 0.36) 70%);
+}
+
+a {
+  color: var(--paper-garden-green);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(111, 143, 115, 0.38);
+}
+
+blockquote {
+  position: relative;
+  padding: 1.05em 1.12em;
+  border: 1px solid var(--paper-garden-line);
+  border-radius: 18px;
+  margin: 1.5em 8px;
+  color: var(--paper-garden-ink);
+  background:
+    linear-gradient(180deg, rgba(255, 250, 241, 0.9), rgba(247, 237, 221, 0.68)),
+    var(--paper-garden-paper);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.48);
+  font-style: normal;
+}
+
+blockquote::before {
+  content: "轻注";
+  display: inline-block;
+  padding: 0.12em 0.5em;
+  border-radius: 999px;
+  margin-bottom: 0.7em;
+  color: var(--paper-garden-red);
+  background: rgba(183, 91, 74, 0.1);
+  font-family: var(--md-font-family);
+  font-size: calc(var(--md-font-size) * 0.74);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+blockquote > p {
+  margin: 0;
+  color: var(--paper-garden-ink);
+  line-height: 1.96;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 1.1em 8px;
+  color: var(--paper-garden-ink);
+  font-family: var(--paper-garden-serif);
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+li {
+  margin: 0.62em 0;
+  color: var(--paper-garden-ink);
+  line-height: 1.88;
+  letter-spacing: 0.015em;
+}
+
+ul > li::before {
+  content: "";
+  display: inline-block;
+  width: 0.42em;
+  height: 0.42em;
+  border-radius: 50%;
+  margin-right: 0.62em;
+  background: var(--paper-garden-green);
+  vertical-align: 0.08em;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  margin: 2.35em 8px;
+  background: linear-gradient(90deg, transparent, rgba(111, 143, 115, 0.36), rgba(217, 189, 125, 0.5), transparent);
+}
+
+.codespan {
+  padding: 0.12em 0.36em;
+  border: 1px solid rgba(111, 143, 115, 0.18);
+  border-radius: 7px;
+  color: var(--paper-garden-green);
+  background: rgba(111, 143, 115, 0.08);
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+pre.code__pre,
+.hljs.code__pre {
+  border: 1px solid var(--paper-garden-line);
+  border-radius: 16px;
+  margin: 1.42em 8px;
+  color: var(--paper-garden-ink);
+  background: #f8efe2;
+}
+
+pre.code__pre > code,
+.hljs.code__pre > code {
+  color: var(--paper-garden-ink);
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: calc(var(--md-font-size) * 0.88);
+  line-height: 1.78;
+}
+
+table {
+  width: calc(100% - 16px);
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--paper-garden-line);
+  border-radius: 16px;
+  margin: 1.55em 8px;
+  color: var(--paper-garden-ink);
+  background: rgba(255, 250, 241, 0.92);
+  overflow: hidden;
+}
+
+th {
+  border-bottom: 1px solid var(--paper-garden-line);
+  color: var(--paper-garden-ink);
+  background: rgba(111, 143, 115, 0.16);
+  font-family: var(--paper-garden-serif);
+  font-weight: 760;
+}
+
+td {
+  border-top: 1px solid rgba(88, 70, 48, 0.08);
+  padding: 0.68em 0.75em;
+}
+
+img {
+  padding: 0.42em;
+  border: 1px solid var(--paper-garden-line);
+  border-radius: 18px;
+  background: #fffaf1;
+  box-shadow: 0 8px 22px rgba(88, 70, 48, 0.08);
+}
+
+figcaption,
+.md-figcaption {
+  color: var(--paper-garden-muted);
+  font-family: var(--paper-garden-serif);
+  font-size: 0.8em;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.markdown-alert {
+  border: 1px solid var(--paper-garden-line);
+  border-radius: 18px;
+  background: var(--paper-garden-paper);
+}
