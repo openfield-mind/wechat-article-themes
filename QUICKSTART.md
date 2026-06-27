@@ -46,6 +46,7 @@ https://github.com/openfield-mind/wechat-article-themes
 
 ```text
 paper-whisper.css
+diamond-glint.css
 paper-museum.css
 edge-note.css
 signal-lab.css
@@ -78,6 +79,7 @@ cd wechat-article-themes
 | --- | --- | --- |
 | paper-garden.css | 大多数文章、随笔、知识分享 | 柔和、纸本、耐读 |
 | paper-whisper.css | 散文、读书笔记、个人表达 | 温润、手札、软纸边 |
+| diamond-glint.css | 审美表达、活动稿、品牌感内容 | 钻石、冷光、闪亮 |
 | paper-museum.css | 读书、文化、审美、策展 | 文艺、红章、手记 |
 | edge-note.css | 观点、评论、方法论 | 锋利、清晰、强识别 |
 | signal-lab.css | AI、技术、研究笔记 | 科技、实验、界面感 |

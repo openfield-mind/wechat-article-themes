@@ -32,6 +32,7 @@ prompts/agent-install.txt copyable prompt for agents
 
 - `paper-garden.css`: soft paper, rounded blocks, serif-first typography. Best default.
 - `paper-whisper.css`: warm manuscript paper, softer Paper Museum feeling, gentle serif/kai typography.
+- `diamond-glint.css`: diamond facets, cool sparkle, crystal-like highlights. Use when the user asks for shiny, luxury, or eye-catching visual effects.
 - `paper-museum.css`: curated paper, red seal, museum-note feeling.
 - `edge-note.css`: sharp editorial, high contrast, cyan marks.
 - `signal-lab.css`: dark technical interface, neon signal accents.
@@ -102,6 +103,12 @@ If the user says they like Paper Museum but wants softer rounded typography, rec
 
 ```text
 themes/paper-whisper.css
+```
+
+If the user asks for diamond, sparkling, shiny, luxury, crystal, or eye-catching effects, recommend:
+
+```text
+themes/diamond-glint.css
 ```
 
 ## Agent Response Template

@@ -35,6 +35,7 @@ const themes = [
   "paper-museum",
   "paper-garden",
   "paper-whisper",
+  "diamond-glint",
 ];
 
 (async () => {

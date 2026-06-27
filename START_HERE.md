@@ -24,6 +24,10 @@
 
 [themes/paper-whisper.css](./themes/paper-whisper.css)
 
+如果你想要更闪、更吸睛、更像钻石冷光的视觉效果，用：
+
+[themes/diamond-glint.css](./themes/diamond-glint.css)
+
 ### 我想让 Codex / Claude / Cursor 帮我装
 
 把下面这段话发给你的 agent：
@@ -69,6 +73,7 @@ cd wechat-article-themes
 | --- | --- | --- |
 | `paper-garden.css` | 第一次用、普通文章、知识分享 | 柔和、耐读、稳 |
 | `paper-whisper.css` | 读书笔记、散文、个人表达 | 温润、纸本、手札 |
+| `diamond-glint.css` | 审美表达、活动稿、品牌感内容 | 钻石、冷光、闪亮 |
 | `paper-museum.css` | 文化、审美、策展类内容 | 红章、展签、文艺 |
 | `edge-note.css` | 观点、评论、方法论 | 锋利、清楚、有力量 |
 | `signal-lab.css` | AI、技术、产品、研究笔记 | 科技、实验、界面感 |

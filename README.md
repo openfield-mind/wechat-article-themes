@@ -26,6 +26,10 @@
 
 [themes/paper-whisper.css](./themes/paper-whisper.css)
 
+想要钻石切面、冷光闪闪、更吸睛的视觉效果，可以用：
+
+[themes/diamond-glint.css](./themes/diamond-glint.css)
+
 ## 这个仓库是干什么的？
 
 这是一个 **微信公众号文章排版 CSS 主题包**。
@@ -129,6 +133,12 @@ cd wechat-article-themes
 
 ![Paper Whisper preview](./previews/paper-whisper.png)
 
+### Diamond Glint / 钻芒
+
+钻石闪光风。冷光渐变、晶体切面、菱形标记和细碎星芒，适合审美表达、活动稿、品牌感内容和想让读者第一眼记住的文章。
+
+![Diamond Glint preview](./previews/diamond-glint.png)
+
 ### Paper Museum / 纸馆
 
 策展手记风。纸张、红章、旁注、展签感更强，适合审美类、读书类、文化类内容。
@@ -153,6 +163,7 @@ cd wechat-article-themes
 themes/                 主题 CSS，真正要复制/安装的是这里
   paper-garden.css      柔和纸本风，推荐新手
   paper-whisper.css     温润手札风，柔和纸馆系
+  diamond-glint.css     钻石闪光风，冷光晶体感
   paper-museum.css      策展纸本文艺风
   edge-note.css         锋利编辑部风
   signal-lab.css        科技实验室风
@@ -176,7 +187,7 @@ install.sh              本机安装脚本
 demo/index.html
 ```
 
-页面顶部可以切换 5 套主题。
+页面顶部可以切换 6 套主题。
 
 ## 常见问题
 
